@@ -8,10 +8,10 @@ In this lab, you'll gain hands-on experience using **Weights & Biases (W&B)** fo
 Your goal is to act like an ML engineer preparing a model for deployment: justify your slices, inspect slice performance in W&B, and validate a weakness with synthetic data. To receive credit, you must:
 
 1. **Run Steps 1–4 and define at least five hypothesis-driven slices.** Each slice should capture a specific property of the tweets (hashtags, negation, emoji density, unusual length, presence of mentions, etc.), and you should be able to explain why that slice matters to model behavior.
-2. **Log to W&B and walk the TA through your analysis.** Ensure `df_long`, `slice_metrics`, `regression_metrics`, and `df_eval` are logged, build comparative visualizations of your choice for the slices, and use the notebook to answer “Why can accuracy be misleading?” and “What did slicing reveal?” during your discussion.
-3. **Complete the targeted stress test (Step 7) and discuss it with the TA.** Paste your hypothesis and 10 LLM-generated tweets in the notebook, run the helper that scores them, interpret any repeated or new failures, and explain whether that changes your confidence in deploying the candidate model.
+2. **Log your analysis to W&B.** Ensure `df_long`, `slice_metrics`, `regression_metrics`, and `df_eval` are logged, build comparative visualizations of your choice for the slices, and answer “Why can accuracy be misleading?” and “What did slicing reveal?” in the notebook.
+3. **Complete the targeted stress test in Step 7.** Paste your hypothesis and 10 LLM-generated tweets in the notebook, run the helper that scores them, interpret any repeated or new failures, and explain whether that changes your confidence in deploying the candidate model.
 
-For every slice you log, keep a short note in the notebook (e.g., the `saved_slice_notes` list) so the TA can see your takeaways without rerunning the code.
+For every slice you log, keep a short note in the notebook, such as in the `saved_slice_notes` list, so your takeaways remain reviewable without rerunning the code.
 
 ## Getting started
 - Clone this repository: https://github.com/nikitachaudharicodes/cmu-mlip-model-testing-lab/tree/main
