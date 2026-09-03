@@ -1,4 +1,4 @@
-# Lab 4: Model Testing with Weights & Biases and LLMs
+# Lab: Model Testing with Weights & Biases and LLMs
 
 In this lab, you will use **Weights & Biases (W&B)** for interactive model evaluation and an LLM to generate targeted test cases.
 You will compare a candidate sentiment model with a baseline, slice predictions to uncover failure modes, log the results to W&B, and stress-test a weak slice with synthetic examples.
