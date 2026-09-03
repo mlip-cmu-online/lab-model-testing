@@ -33,28 +33,6 @@ Your goal is to act like an ML engineer preparing a model for deployment by just
 
 For every slice you log, keep a short note in `saved_slice_notes` so your takeaways remain reviewable without rerunning the notebook.
 
-## Generate the Submission Report
-
-After completing the lab, run the final **Save submission evidence** cell and save the executed notebook.
-Export a W&B table or save a screenshot that shows the run evidence without requiring another viewer to access your W&B project.
-Then, from the repository root, run:
-
-```shell
-python3 scripts/generate-model-testing-submission.py \
-  --learner "Your name" \
-  --notebook lab4.ipynb \
-  --wandb-evidence path/to/wandb-export-or-screenshot.png
-```
-
-The W&B evidence may be CSV, HTML, JSON, PDF, PNG, JPEG, or WebP.
-Open `submission/model-testing-report.html` and correct every item marked `missing` before uploading it to Canvas.
-Keep `submission/model-testing-manifest.json` with your submission evidence, and answer the slice and deployment interpretation questions separately in Canvas.
-
-The command reads only local files; it does not open W&B, download models, or rerun the notebook.
-It checks that every code cell was executed, that the report contains labeled overall and five-or-more slice metrics, and that exactly ten labeled stress-test cases have baseline and candidate scores.
-It also checks the saved W&B run identifier, required logged artifact names, slice notes, and obvious plaintext credential patterns.
-The checker cannot detect a credential visible inside an image, so review the finished report before uploading it.
-
 ## W&B Login
 
 Create a free W&B account and retrieve your key from the [W&B authorization page](https://wandb.ai/authorize).
